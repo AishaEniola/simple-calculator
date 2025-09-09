@@ -1,5 +1,5 @@
 #include <stdio.h> 
-//functions prototypes
+//functions prototypes declaration
 double addition(double a, double b);
 double subtract(double a, double b);
 double multiply(double a, double b);
@@ -14,6 +14,10 @@ int main(){
     printf("basic calculator main functions\n");         //main function print
     printf("enter an operator (+, -, *, /): ");    //list of operations
     scanf(" %c", &choice);
+    if (choice != '+' && choice != '-' && choice != '*' && choice != '/'){ //check if the choice is valid
+        printf("Invalid operator!\n");
+        return 1; // Exit the program with an error code
+    }
     printf("Enter two numbers: ");          //prompt user to enter two numbers  
     scanf("%lf %lf", &num1, &num2);
 
