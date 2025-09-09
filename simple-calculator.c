@@ -2,6 +2,7 @@
 //functions prototypes
 double addition(double a, double b);
 double subtract(double a, double b);
+double multiply(double a, double b);
 
 //main function
 int main(){
@@ -13,6 +14,9 @@ int main(){
     double sub= subtract(10.5,4.5);                  //subtraction function call
     printf("subtraction of 4.5 from 10.5 is: %.1f\n", sub); //subtraction print function
 
+    double mul= multiply(10.5,4.5);                  //multiplication function call
+    printf("multiplication of 4.5 and 10.5 is: %.1f\n", mul); //multiplication print function
+
     return 0;
 }
 //addition fumction
@@ -22,4 +26,8 @@ double addition(double x, double y){
 //subtraction function
 double subtract(double x, double y){
     return x-y;
+}
+//multiplication function
+double multiply(double x, double y){
+    return x*y;
 }
